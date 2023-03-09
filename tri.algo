@@ -1,0 +1,14 @@
+ALGORITHM insertion
+VAR
+ i,j,temp:INTEGER   
+ t:array
+BEGIN
+    FOR i FROM 1 TO n 
+    temp:=t[i]
+    WHILE (j>=0 and j>temp ) DO
+        t[j+1]:=t[j]
+        j:=j-1
+    END_WHILE
+    t[j+1]:=temp
+    END_FOR
+END
